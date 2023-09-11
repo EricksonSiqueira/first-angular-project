@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-if-render',
@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./if-render.component.css'],
 })
 export class IfRenderComponent {
+  @Input() name!: string;
+
   canShow: boolean = true;
 }

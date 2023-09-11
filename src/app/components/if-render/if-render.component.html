@@ -1,3 +1,11 @@
 <div class="lecture">
-  Aula nova
+  <h2 *ngIf="canShow">Is allowed to show</h2>
+  <h2 *ngIf="!!name; else nameNotFound">The name is: {{name}}</h2>
+  <ng-template #nameNotFound>
+    <div>
+      <h2>
+        Name not found!
+      </h2>
+    </div>
+  </ng-template>
 </div>
