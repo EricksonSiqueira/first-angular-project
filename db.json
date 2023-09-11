@@ -1,0 +1,9 @@
+{
+  "animals": [
+    { "name": "Tapioca", "type": "cat", "age": 2 },
+    { "name": "Sushi", "type": "dog", "age": 3 },
+    { "name": "Geraldo", "type": "snake", "age": 5 },
+    { "name": "Leo", "type": "turtle", "age": 20 },
+    { "name": "Mickey", "type": "mouse", "age": 1 }
+  ]
+}
