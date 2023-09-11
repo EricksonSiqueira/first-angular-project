@@ -20,11 +20,12 @@ export class ListRenderComponent {
   }
 
   showAge(animal: Animal) {
-    console.log(animal.id);
+    this.animalDetails = `${animal.name} is ${animal.age} years old`;
   }
 
   removeAnimal(animal: Animal) {
-    this.animals = this.listService.remove(this.animals, animal);
+    this.animals = this.animals.filter((a) => a.name !== animal.name);
+    this.listService.remove(animal.id).subscribe();
   }
 
   createAnimal(
