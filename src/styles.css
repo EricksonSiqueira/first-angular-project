@@ -3,3 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  padding-bottom: 500px;
+}
+
+.lecture {
+  border-bottom: 1px solid #ccc;
+  padding: 32px;
+  margin-bottom: 16px;
+}
