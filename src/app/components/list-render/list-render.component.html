@@ -1,7 +1,11 @@
 <div class="lecture">
   <h2>Animals</h2>
   <ul>
-    <li *ngFor="let animal of animals">{{animal.name}} is a {{animal.type}} at the age of {{ animal.age }}
+    <li *ngFor="let animal of animals">
+      <a routerLink="/list/{{animal.id}}">{{animal.name}}</a>
+      is a {{animal.type}} at
+      the age of {{
+      animal.age }}
       <button (click)="showAge(animal)">
         Show animal age
       </button>
@@ -15,7 +19,7 @@
     <input type="text" [(ngModel)]="animalName" name="animalName" placeholder="animal name...">
     <input type="text" [(ngModel)]="animalType" name="animalType" placeholder="animal type...">
     <input type="number" [(ngModel)]="animalAge" name="animalAge" placeholder="animal age...">
-    <button (click)="createAnimal({age: animalAge, name: animalName, type: animalType})">
+    <button (click)="createAnimal(animalName, animalType, animalAge)">
       create
     </button>
   </form>

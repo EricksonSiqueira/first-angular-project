@@ -17,6 +17,7 @@ import localePt from '@angular/common/locales/pt';
 import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ItemDetailComponent } from './components/item-detail/item-detail.component';
 
 registerLocaleData(localePt);
 
@@ -33,6 +34,7 @@ registerLocaleData(localePt);
     ListRenderComponent,
     PipesComponent,
     TwoWayBindingComponent,
+    ItemDetailComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [

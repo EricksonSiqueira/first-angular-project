@@ -1,9 +1,9 @@
 {
   "animals": [
-    { "name": "Tapioca", "type": "cat", "age": 2 },
-    { "name": "Sushi", "type": "dog", "age": 3 },
-    { "name": "Geraldo", "type": "snake", "age": 5 },
-    { "name": "Leo", "type": "turtle", "age": 20 },
-    { "name": "Mickey", "type": "mouse", "age": 1 }
+    { "id": 1, "name": "Tapioca", "type": "cat", "age": 2 },
+    { "id": 2, "name": "Sushi", "type": "dog", "age": 3 },
+    { "id": 3, "name": "Geraldo", "type": "snake", "age": 5 },
+    { "id": 4, "name": "Leo", "type": "turtle", "age": 20 },
+    { "id": 5, "name": "Mickey", "type": "mouse", "age": 1 }
   ]
 }
