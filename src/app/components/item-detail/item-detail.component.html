@@ -1,6 +1,11 @@
-<div class="lecture" *ngIf="!!animal">
+<div class="lecture" *ngIf="!!animal! else loading">
   <p>Id: {{animal.id}}</p>
   <p>Name: {{animal.name}}</p>
   <p>Type: {{animal.type}}</p>
   <p>Age: {{animal.age}}</p>
 </div>
+<ng-template #loading>
+  <div>
+    <p>loading...</p>
+  </div>
+</ng-template>
