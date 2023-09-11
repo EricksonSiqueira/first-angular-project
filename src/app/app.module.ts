@@ -14,6 +14,8 @@ import { ListRenderComponent } from './components/list-render/list-render.compon
 import { PipesComponent } from './components/pipes/pipes.component';
 import { registerLocaleData } from '@angular/common';
 import localePt from '@angular/common/locales/pt';
+import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
+import { FormsModule } from '@angular/forms';
 
 registerLocaleData(localePt);
 
@@ -29,8 +31,9 @@ registerLocaleData(localePt);
     ChangeNumberComponent,
     ListRenderComponent,
     PipesComponent,
+    TwoWayBindingComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [
     {
       provide: LOCALE_ID,
