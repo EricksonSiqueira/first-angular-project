@@ -15,6 +15,10 @@ export class ListRenderComponent {
   ];
   animalDetails = '';
 
+  animalName = '';
+  animalAge = 0;
+  animalType = '';
+
   constructor(private listService: ListService) {}
 
   showAge(animal: Animal) {
@@ -23,5 +27,12 @@ export class ListRenderComponent {
 
   removeAnimal(animal: Animal) {
     this.animals = this.listService.remove(this.animals, animal);
+  }
+
+  createAnimal(animal: Animal) {
+    this.animals = this.listService.add(this.animals, animal);
+    this.animalName = '';
+    this.animalType = '';
+    this.animalAge = 0;
   }
 }

@@ -10,4 +10,7 @@ export class ListService {
   remove(animals: Animal[], animalToRemove: Animal) {
     return animals.filter((animal) => animal.name !== animalToRemove.name);
   }
+  add(animals: Animal[], animal: Animal) {
+    return [...animals, animal];
+  }
 }
