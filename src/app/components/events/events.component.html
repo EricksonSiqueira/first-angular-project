@@ -1,6 +1,9 @@
 <div class="lecture">
   <h3 *ngIf="showTitle">Conditional title</h3>
   <button (click)="showMessage()">
-    Show message
+    <span *ngIf="showTitle; else showTitleText">Hide title</span>
+    <ng-template #showTitleText>
+      <span>Show title</span>
+    </ng-template>
   </button>
 </div>
